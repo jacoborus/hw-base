@@ -1,0 +1,22 @@
+{
+  "name": "hw-base",
+  "version": "0.0.1",
+  "description": "Base plugin for Hardwire CMS",
+  "keywords": [
+    "CMS"
+  ],
+  "scripts": {
+    "postinstall": "mkdir ./public && mkdir ./public/js && mkdir ./public/css && cat ./node_modules/nanobar/nanobar.js ./node_modules/submitter/submitter.js ./src/js/baseadmin.js > ./public/js/hw-baseadmin.js && cat ./src/css/pure-css.min.css ./src/css/side-menu.css ./src/css/admin.css >  ./public/css/hw-baseadmin.css"
+  },
+  "url": "https://github.com/jacoborus/hw-base",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jacoborus/hw-base.git"
+  },
+  "dependencies": {
+    "submitter": "^0.0.6",
+    "nanobar": "^0.2.0"
+  },
+  "author": "Jacobo Tabernero - jacoborus - jacobo@xarope.eu",
+  "license": "MIT"
+}
