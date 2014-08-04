@@ -1,12 +1,12 @@
 {
   "name": "hw-base",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Base plugin for Hardwire CMS",
   "keywords": [
     "CMS"
   ],
   "scripts": {
-    "postinstall": "mkdir ./public && mkdir ./public/js && mkdir ./public/css && cat ./node_modules/nanobar/nanobar.js ./node_modules/submitter/submitter.js ./src/js/baseadmin.js > ./public/js/hw-baseadmin.js && cat ./src/css/pure-css.min.css ./src/css/side-menu.css ./src/css/admin.css >  ./public/css/hw-baseadmin.css"
+    "postinstall": "mkdir ./public/js && mkdir ./public/css && cat ./node_modules/nanobar/nanobar.js ./node_modules/submitter/submitter.js ./src/js/baseadmin.js > ./public/js/hw-baseadmin.js && cat ./src/css/pure-css.min.css ./src/css/side-menu.css ./src/css/admin.css >  ./public/css/hw-baseadmin.css"
   },
   "url": "https://github.com/jacoborus/hw-base",
   "repository": {
