@@ -1,8 +1,9 @@
 {
   "name": "hw-base",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Base plugin for Hardwire CMS",
   "keywords": [
+    "hardwire",
     "CMS"
   ],
   "scripts": {
@@ -18,5 +19,7 @@
     "nanobar": "^0.2.0"
   },
   "author": "Jacobo Tabernero - jacoborus - jacobo@xarope.eu",
-  "license": "MIT"
+  "license": "MIT",
+  "_hwPlugin": "base",
+  "_hwEngine": "^0.0.30"
 }
