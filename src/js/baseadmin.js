@@ -52,7 +52,11 @@ options = {
 		data = JSON.parse( data );
 		console.log(data);
 		nanobar.go(100);
-		window.location.assign("/admin/docs/" + data.model + "/" + data.id)
+		if (data.ok) {
+			window.location.assign("/admin/docs/" + data.model + "/" + data.id)
+		} else {
+			alert('Error with form');
+		}
 	}
 };
 if (document.querySelector( 'form[name="mainform"]' ) !== null) {
