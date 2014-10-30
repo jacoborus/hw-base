@@ -49,8 +49,10 @@ options = {
 		alert('Ups! error transfiriendo datos');
 	},
 	success: function (data) {
+		data = JSON.parse( data );
 		console.log(data);
 		nanobar.go(100);
+		window.location.assign("/admin/docs/" + data.model + "/" + data.id)
 	}
 };
 if (document.querySelector( 'form[name="mainform"]' ) !== null) {
